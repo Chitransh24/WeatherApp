@@ -6,7 +6,7 @@ export default function Weather() {
     const onChange = (event)=>{setSearch(event.target.value)}
     useEffect(()=>{
         const  getData= async ()=>{
-            let url = `http://api.weatherapi.com/v1/current.json?key=f7919c8ac66c47e696f203747220607&q=${search}`;
+            let url = `https://api.weatherapi.com/v1/current.json?key=f7919c8ac66c47e696f203747220607&q=${search}`;
             let data = await fetch(url);
             let parsedData = await data.json();
             setCity(parsedData.current);
