@@ -16,11 +16,34 @@ export default function Weather() {
     },[search])
 
     return (
+        
     <div className='box'>
+        {setCity}
         <div className="inputData">
         <input type="search" className='inputField' onChange={onChange} />
         </div>
-        {!city?(<p>No data Found!</p>) :( 
+        {!city?(
+                
+        <div className='info'>
+        <h2 className='location'>
+            <i className='fas fa-street-view'>
+            </i>
+            {search} <br />
+            No Such City Found
+            
+            </h2>
+            <h1 className="tempmin_max">
+                Please Enter a Valid City Name
+            </h1>
+        {/* <h1 className='temp'>Temprature : {city.temp_c}</h1> */}
+        {/* <h3 className='tempmin_max'>Humidity : {city.humidity} <br /> */}
+        {/* Feels Like : {city.feelslike_c} */}
+        {/* </h3> */}
+        </div>
+
+        
+        
+        ) :( 
         <div className='info'>
         <h2 className='location'>
             <i className='fas fa-street-view'>
