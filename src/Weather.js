@@ -25,7 +25,7 @@ export default function Weather() {
         {!city?(
                 
         <div className='info'>
-        <h2 className='location'>
+        <h2 className='location' style={{fontSize:"2rem"}}>
             <i className='fas fa-street-view'>
             </i>
             {search} <br />

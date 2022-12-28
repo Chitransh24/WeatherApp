@@ -206,8 +206,9 @@ body > span {
 }
 
 .inputField {
+    margin-top: 2rem;
     width: 50%;
-    margin: auto;
+    /* margin: auto; */
     border-radius: 5rem;
     padding: 1rem 1rem;
     outline: none;
